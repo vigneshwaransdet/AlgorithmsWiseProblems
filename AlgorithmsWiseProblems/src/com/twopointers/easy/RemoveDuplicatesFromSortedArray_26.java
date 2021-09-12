@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /*
+ * Question : 26. Remove Duplicates from Sorted Array
  * Input -> int[]
  * Output -> int
  * Constraints -> space Complexity -> O(1) 
@@ -18,6 +19,9 @@ import org.junit.Test;
  * 
  * 		increment the right
  * return the count
+ * 
+ * Time Complexity -> O(n)
+ * Space Complexity -> O(1)
  */
 
 public class RemoveDuplicatesFromSortedArray_26 {
