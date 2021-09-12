@@ -109,7 +109,6 @@ public class ARelativeSortArray_1122 {
 	}
 	
 	private int[] toFindRelativeSortArrayUsingTreeMap(int[] arr1, int[] arr2) {
-		int left=0,right=0;
 		Map<Integer,Integer> map = new TreeMap<>();
 		for (int i = 0; i < arr1.length; i++) {
 			map.put(arr1[i],map.getOrDefault(arr1[i], 0)+1);
