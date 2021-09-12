@@ -33,6 +33,13 @@ public class RemoveElement_27 {
 		int k = 2;
 		Assert.assertEquals(toRemoveElement(nums,k), 5);
 	}
+	
+	@Test
+	public void test3() {
+		int[] nums = {3,2,2,3,4};
+		int k = 3;
+		Assert.assertEquals(toRemoveElement(nums,k), 3);
+	}
 
 	private int toRemoveElement(int[] nums, int k) {
 		int index=0,count = 0;
