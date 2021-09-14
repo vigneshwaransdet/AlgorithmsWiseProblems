@@ -3,6 +3,40 @@ package com.twopointers.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
+/*
+ * Input -> String
+ * Output -> boolean
+ * Constraints -> Two pointers
+ * 
+ * Pseudocode:
+ * Brute Force:
+ * Initialize left=0 and right=string length - 1 
+ * to convert the string to lower case and store the another string variable
+ * Initialize another String variable to store only alphanumeric characters
+ * Iterate the loop until left < right
+ * check left character != right character
+ * 		true return false
+ * increment the left and decrement the right
+ * 
+ * once loop ends
+ * return true
+ * 
+ * Optimized:
+ * Initialize i=0 and j=string length - 1 
+ * Iterate the loop until left < right
+ * 		check i<j && current string character of i != any special characters except alphanumeric
+ * 		true i++
+ * 		check i<j && current string character of j != any special characters except alphanumeric
+ * 		true j--
+ * 		check i<j && current string character of i to lower case != current string character of j to lower case
+ * 		true return false
+ * 
+ * loop ends
+ * return true
+ * 		
+ * 
+ */
+
 public class ValidPalindrome_125 {
 	@Test
 	public void test1() {
