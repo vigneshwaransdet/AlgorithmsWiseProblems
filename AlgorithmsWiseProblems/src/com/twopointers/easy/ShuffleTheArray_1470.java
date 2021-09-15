@@ -23,7 +23,6 @@ import org.junit.Test;
  * Space Complexity -> O(n)
  */
 
-
 public class ShuffleTheArray_1470 {
 	@Test
 	public void test1() {
