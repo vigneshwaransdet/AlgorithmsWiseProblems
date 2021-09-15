@@ -21,6 +21,8 @@ import org.junit.Test;
  * 		if true increment the count
  * once loop ends 
  * return count
+ * Time Complexity -> O(n)
+ * Space Complexity -> O(1)
  */
 
 public class JewelsAndStones_771 {
