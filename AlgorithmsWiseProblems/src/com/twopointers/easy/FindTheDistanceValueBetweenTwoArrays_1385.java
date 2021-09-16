@@ -3,6 +3,25 @@ package com.twopointers.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
+/*
+ *	Input -> two int[] arrays, int
+ *	Output -> int
+ *	Constraints -> O(n) 
+ *	
+ *	Pseudocode:
+ *	BruteForce:
+ *	init count=0,resultCount=0
+ *	Iterate the outer loop until i < arr1.length
+ *		Iterate the inner loop until j < arr2.length
+ *			declare the variable diff to store the value of arr1[i]-arr2[j]
+ * 				check if diff > d && j==arr2.length-1
+ * 					true count++
+ * 				else if diff<=d
+ * 					break
+ * 
+ * 	return count
+ */
+
 public class FindTheDistanceValueBetweenTwoArrays_1385 {
 	@Test
 	public void test1() {
