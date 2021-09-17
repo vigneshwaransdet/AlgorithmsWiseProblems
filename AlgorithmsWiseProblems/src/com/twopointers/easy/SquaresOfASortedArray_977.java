@@ -26,9 +26,7 @@ import org.junit.Test;
 		else 
 			res[i--] = nums[left]*nums[left];
 			left++;right--;
-			
  * 	return res
- * 
  */
 
 public class SquaresOfASortedArray_977 {
