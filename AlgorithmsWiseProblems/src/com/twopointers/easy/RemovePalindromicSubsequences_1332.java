@@ -3,6 +3,18 @@ package com.twopointers.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
+/*
+ * Input -> String
+ * Output -> int
+ * Constraints -> O(n)
+ * Pseudocode:
+ * init left=0,right=s.length()-1
+ * Iterate the loop until left<=right
+ * 		check if(s.charAt(left++)!=s.charAt(right--))
+ * 			true return 2
+ * return 1
+ */
+
 public class RemovePalindromicSubsequences_1332 {
 	@Test
 	public void test1() {
