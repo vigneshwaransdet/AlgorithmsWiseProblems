@@ -5,6 +5,22 @@ import java.util.Collections;
 import org.junit.Assert;
 import org.junit.Test;
 
+/*
+ * Input -> int[]
+ * Output -> boolean
+ * Constaints -> O(n)
+ * 
+ * Pseudocode:
+ * reverse the array
+ * Iterate the outer loop until i<arr.length
+ * Iterate the inner loop until j<arr.length
+ * 		check i!=j && arr[i] == 2*arr[j] 
+ * 			true, return true
+ * 
+ * return false
+ * 
+ */
+
 public class CheckIfNAndItsDoubleExist_1346 {
 	@Test
 	public void test1() {
