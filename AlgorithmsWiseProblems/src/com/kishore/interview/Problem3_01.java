@@ -2,7 +2,7 @@ package com.kishore.interview;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+//01, 10, 02, 20, 11
 public class Problem3_01 {
 	@Test
 	public void test1() {
@@ -81,6 +81,8 @@ public class Problem3_01 {
 			sum += rem;
 			var = var / 10;
 		}
-		return sum;
+	return sum;
 	}
+	
+	
 }
