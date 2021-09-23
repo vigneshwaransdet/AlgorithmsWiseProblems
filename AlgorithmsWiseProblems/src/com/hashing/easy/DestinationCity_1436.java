@@ -58,8 +58,6 @@ public class DestinationCity_1436 {
 				destination += paths.get(i).get(1);
 			}
 		}
-		
-		
 		return destination;
     }
 }
