@@ -17,33 +17,43 @@ public class ReverseVowelsOfAString_345 {
 		Assert.assertEquals( "leotcede",toReverseVowelsOfAString(s));
 	}
 
+//	private String toReverseVowelsOfAString(String s) {
+//		int left = 0, right = s.length() - 1;
+//		String vowels = "aeiouAEIOU";
+//		char[] charArray = s.toCharArray();
+//		while (left < right) {
+//			if ((!vowels.contains(String.valueOf(charArray[left])))
+//					&& (vowels.contains(String.valueOf(charArray[right])))) {
+//				left++;
+//			} else if((vowels.contains(String.valueOf(charArray[left])))
+//					&& (vowels.contains(String.valueOf(charArray[right])))){
+//				char temp = charArray[left];
+//				charArray[left++] = charArray[right];
+//				charArray[right--] = temp;
+//			}
+//			else if((vowels.contains(String.valueOf(charArray[left])))
+//					&& (!vowels.contains(String.valueOf(charArray[right])))){
+//				right--;
+//			}else {
+//				left++;right--;
+//			}
+//		}
+//		System.out.println(Arrays.toString(charArray));
+//		String res = "";
+//		for (char c : charArray) {
+//			res+=c;
+//		}
+//		return res;
+//	}
+	
 	private String toReverseVowelsOfAString(String s) {
-		int left = 0, right = s.length() - 1;
+		int left = 0, right = s.length()-1;
 		String vowels = "aeiouAEIOU";
-		char[] charArray = s.toCharArray();
-		while (left < right) {
-			if ((!vowels.contains(String.valueOf(charArray[left])))
-					&& (vowels.contains(String.valueOf(charArray[right])))) {
-				left++;
-			} else if((vowels.contains(String.valueOf(charArray[left])))
-					&& (vowels.contains(String.valueOf(charArray[right])))){
-				char temp = charArray[left];
-				charArray[left++] = charArray[right];
-				charArray[right--] = temp;
-			}
-			else if((vowels.contains(String.valueOf(charArray[left])))
-					&& (!vowels.contains(String.valueOf(charArray[right])))){
-				right--;
-			}else {
-				left++;right--;
+		while(left < right) {
+			if(!vowels.contains(String.valueOf(s.charAt(left))) && vowels.contains(String.valueOf(s.charAt(right))) {
+				
 			}
 		}
-		System.out.println(Arrays.toString(charArray));
-		String res = "";
-		for (char c : charArray) {
-			res+=c;
-		}
-		return res;
 	}
 	
 }
