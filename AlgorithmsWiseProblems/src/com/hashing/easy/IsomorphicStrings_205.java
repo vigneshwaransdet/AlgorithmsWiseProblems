@@ -45,9 +45,10 @@ public class IsomorphicStrings_205 {
         int [] smap = new int [256];
         int [] tmap = new int [256];
         for (int i = 0; i < s.length; i++) {
-            if (smap[s[i]] == 0 && tmap[t[i]] == 0) {
-                smap[s[i]] = t[i];
-                tmap[t[i]] = s[i];
+        	
+            if (smap[s[i]] == 0 && tmap[t[i]] == 0) {//egg add
+                smap[s[i]] = t[i];//a d 
+                tmap[t[i]] = s[i];//e g
             } else if (smap[s[i]] != t[i]) return false;
         }
         return true;
